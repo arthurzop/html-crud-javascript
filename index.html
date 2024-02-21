@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD JS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Rede social totalmente real</h1>
+    </header>
+    <div class="container">
+        <form class="left-container" id="form">
+            <span id="msg"></span>
+
+            <h4>Digite seu post aqui</h4>
+            <textarea name="posts" id="input" placeholder="Digite aqui..."></textarea>
+            <button type="submit">Postar</button>
+        </form>
+        <div class="right-container">
+            <h3>&#128071 Seus posts aqui &#128071</h3>
+            <div id="posts">
+                <div class="">
+                    <p>Post 1</p>
+                    <span class="options">
+                        <i onClick="editPost(this)" class="fas fa-edit"></i>
+                        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+                <div class="">
+                    <p>Post 2</p>
+                    <span class="options">
+                        <i onClick="editPost(this)" class="fas fa-edit"></i>
+                        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
